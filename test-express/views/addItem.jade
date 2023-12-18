@@ -1,0 +1,18 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet")
+        title #{title}
+    body 
+        div.container
+            section.top
+                h1 Welcome to #{title}
+            section.middle 
+                form(action="/item", method="post")
+                    input(type="text", placeholder="item name")
+                    input(type="text", placeholder="item info")
+                    input(type="text", placeholder="price")
+                    input(type="text", placeholder="discount(not required)")
+                    button(type="submit")
+            section.bottom
